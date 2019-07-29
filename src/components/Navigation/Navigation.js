@@ -9,9 +9,15 @@ const style = {
 const Navigation = () => {
   return (
     <nav>
-      <NavLink activeStyle={style} exact to="/">Home</NavLink>
-      <NavLink activeStyle={style} to="/about">About</NavLink>
-      <NavLink activeStyle={style} to="/contact">Contact</NavLink>
+      <NavLink activeStyle={style} exact to="/">
+        Home
+      </NavLink>
+      <NavLink activeStyle={style} to="/about">
+        About
+      </NavLink>
+      <NavLink activeStyle={style} to="/contact">
+        Contact
+      </NavLink>
     </nav>
   );
 };

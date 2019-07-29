@@ -1,10 +1,11 @@
 import React from 'react'
-
-const Test = (props) => {
-     console.log(props)
+import { Link }from 'react-router-dom'
+const Test = ({match}) => {
+     
      return (
           <div>
-               <h1> I am Test</h1>
+               <h1> I am Test and my params is {match.params.postId} </h1>
+               <Link to="/">Go Home </Link>
           </div>
      )
 }
